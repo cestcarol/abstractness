@@ -106,7 +106,7 @@ def main():
     parser.add_argument('wikidump',
                         help="The wikipedia dump"
     )
-    parser.add_argument('-ns',
+    parser.add_argument('-ns', type=int,
                         help="The number of sentences per concept to extract"
     )
     args = parser.parse_args()
